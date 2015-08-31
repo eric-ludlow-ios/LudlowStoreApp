@@ -14,6 +14,10 @@
 		0FA2449E1B94A77600DD8E2A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FA2449D1B94A77600DD8E2A /* Images.xcassets */; };
 		0FA244A11B94A77600DD8E2A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FA2449F1B94A77600DD8E2A /* LaunchScreen.xib */; };
 		0FA244AD1B94A77600DD8E2A /* LudlowStoreAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA244AC1B94A77600DD8E2A /* LudlowStoreAppTests.m */; };
+		0FA244B81B94BCDB00DD8E2A /* StorePurchaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA244B71B94BCDB00DD8E2A /* StorePurchaseController.m */; };
+		0FA244BB1B94BD0200DD8E2A /* PurchasedDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA244BA1B94BD0200DD8E2A /* PurchasedDataController.m */; };
+		0FA244BE1B94C4A500DD8E2A /* StoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA244BD1B94C4A500DD8E2A /* StoreViewController.m */; };
+		0FA244C01B94CEFC00DD8E2A /* Products.json in Resources */ = {isa = PBXBuildFile; fileRef = 0FA244BF1B94CEFC00DD8E2A /* Products.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,13 @@
 		0FA244A61B94A77600DD8E2A /* LudlowStoreAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LudlowStoreAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FA244AB1B94A77600DD8E2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0FA244AC1B94A77600DD8E2A /* LudlowStoreAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LudlowStoreAppTests.m; sourceTree = "<group>"; };
+		0FA244B61B94BCDB00DD8E2A /* StorePurchaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StorePurchaseController.h; sourceTree = "<group>"; };
+		0FA244B71B94BCDB00DD8E2A /* StorePurchaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StorePurchaseController.m; sourceTree = "<group>"; };
+		0FA244B91B94BD0200DD8E2A /* PurchasedDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PurchasedDataController.h; sourceTree = "<group>"; };
+		0FA244BA1B94BD0200DD8E2A /* PurchasedDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PurchasedDataController.m; sourceTree = "<group>"; };
+		0FA244BC1B94C4A500DD8E2A /* StoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreViewController.h; sourceTree = "<group>"; };
+		0FA244BD1B94C4A500DD8E2A /* StoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreViewController.m; sourceTree = "<group>"; };
+		0FA244BF1B94CEFC00DD8E2A /* Products.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Products.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,9 +96,12 @@
 				0FA244951B94A77600DD8E2A /* AppDelegate.m */,
 				0FA244971B94A77600DD8E2A /* ViewController.h */,
 				0FA244981B94A77600DD8E2A /* ViewController.m */,
+				0FA244BC1B94C4A500DD8E2A /* StoreViewController.h */,
+				0FA244BD1B94C4A500DD8E2A /* StoreViewController.m */,
 				0FA2449A1B94A77600DD8E2A /* Main.storyboard */,
 				0FA2449D1B94A77600DD8E2A /* Images.xcassets */,
 				0FA2449F1B94A77600DD8E2A /* LaunchScreen.xib */,
+				0FA244C11B94CFA600DD8E2A /* InAppPurchases */,
 				0FA244901B94A77600DD8E2A /* Supporting Files */,
 			);
 			path = LudlowStoreApp;
@@ -117,6 +131,18 @@
 				0FA244AB1B94A77600DD8E2A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0FA244C11B94CFA600DD8E2A /* InAppPurchases */ = {
+			isa = PBXGroup;
+			children = (
+				0FA244B61B94BCDB00DD8E2A /* StorePurchaseController.h */,
+				0FA244B71B94BCDB00DD8E2A /* StorePurchaseController.m */,
+				0FA244B91B94BD0200DD8E2A /* PurchasedDataController.h */,
+				0FA244BA1B94BD0200DD8E2A /* PurchasedDataController.m */,
+				0FA244BF1B94CEFC00DD8E2A /* Products.json */,
+			);
+			name = InAppPurchases;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FA2449C1B94A77600DD8E2A /* Main.storyboard in Resources */,
+				0FA244C01B94CEFC00DD8E2A /* Products.json in Resources */,
 				0FA244A11B94A77600DD8E2A /* LaunchScreen.xib in Resources */,
 				0FA2449E1B94A77600DD8E2A /* Images.xcassets in Resources */,
 			);
@@ -219,7 +246,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FA244B81B94BCDB00DD8E2A /* StorePurchaseController.m in Sources */,
 				0FA244991B94A77600DD8E2A /* ViewController.m in Sources */,
+				0FA244BE1B94C4A500DD8E2A /* StoreViewController.m in Sources */,
+				0FA244BB1B94BD0200DD8E2A /* PurchasedDataController.m in Sources */,
 				0FA244961B94A77600DD8E2A /* AppDelegate.m in Sources */,
 				0FA244931B94A77600DD8E2A /* main.m in Sources */,
 			);
@@ -350,6 +380,7 @@
 				INFOPLIST_FILE = LudlowStoreApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -360,6 +391,7 @@
 				INFOPLIST_FILE = LudlowStoreApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -416,6 +448,7 @@
 				0FA244B21B94A77600DD8E2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0FA244B31B94A77600DD8E2A /* Build configuration list for PBXNativeTarget "LudlowStoreAppTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +457,7 @@
 				0FA244B51B94A77600DD8E2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
